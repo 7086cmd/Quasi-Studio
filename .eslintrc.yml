@@ -1,0 +1,59 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+  serviceworker: true
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:vue/essential
+  - plugin:@typescript-eslint/recommended
+  - plugin:vue/vue3-recommended
+parserOptions:
+  ecmaVersion: 13
+  parser: '@typescript-eslint/parser'
+  sourceType: module
+parser: vue-eslint-parser
+plugins:
+  - vue
+  - '@typescript-eslint'
+  - prettier
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  prettier/prettier:
+    - error
+    - arrowParens: always
+      bracketSameLine: false
+      bracketSpacing: true
+      embeddedLanguageFormatting: auto
+      htmlWhitespaceSensitivity: css
+      insertPragma: false
+      jsxSingleQuote: true
+      proseWrap: preserve
+      quoteProps: as-needed
+      requirePragma: false
+      semi: false
+      singleQuote: true
+      tabWidth: 2
+      trailingComma: es5
+      useTabs: false
+      printWidth: 200
+    - usePrettierrc: true
+  prefer-const: 0
+  vue/html-indent: 0
+  vue/html-self-closing: 0
+  vue/max-attributes-per-line: 0
+  vue/multi-word-component-names: 0
+  vue/singleline-html-element-content-newline: 0
+  vue/no-v-model-argument: 0
